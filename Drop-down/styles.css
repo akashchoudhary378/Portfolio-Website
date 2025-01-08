@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-color: wheat;
+}
+.menu-bar 
+{
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+.menu-bar ul
+{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-bar ul li a
+{
+    
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    /* background-color: #2bab0d; */
+}
+
+.menu-bar ul li a:hover
+{
+    background-color: #2bab0d;
+    border-radius: 3px;
+}
+.active
+{
+    background-color: #2bab0d;
+    padding: 15px;
+}
+.sub-menu 
+{
+    margin-top: 15px;
+    display: none;
+}
+
+.sub-menu ul
+{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+.sub-menu ul li
+{
+    text-align: center;
+    width: 200px;
+    margin-top: 8px;
+    padding: 20px;
+}
+ .menu-bar ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: green;
+    /* margin: 16px; */
+}
+.Service-sub-menu
+{
+    display: none;
+    margin-top: 15px;
+}
+
+.Service-sub-menu ul
+{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Service-sub-menu ul li
+{
+    padding: 20px 50px;
+   
+    
+}
+
+ .menu-bar ul li:hover .Service-sub-menu 
+ {
+    display: block;
+    position: absolute;
+    background-color: green;
+ }

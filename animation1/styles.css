@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .square
+{
+    height: 300px;
+    width:300px;
+    background-color: red;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode:forwards ;
+}
+@keyframes anime{
+   from
+   {
+    left: 0;
+    background-color: red;
+    rotate: 0;
+   }
+
+   to
+   {
+    rotate: 360deg;
+    left: 60%;
+    background-color: blue;
+   }
+} */
+
+img
+{
+    width: 200px;
+    position: absolute;
+    animation-name: rohit-anime;
+    animation-duration: 2s;
+    animation-delay:1s ;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite ; 
+    animation-direction:alternate ;
+    animation-timing-function: linear;
+}
+
+@keyframes rohit-anime
+{
+
+    
+     0%{
+        left:0;
+        top: 0;
+        rotate: 0deg;
+        /* rotate: 0deg; */
+    }
+    50%{
+     left: 80%;
+     top: 0;
+     rotate: 360deg;
+    }
+
+    100%{
+        left: 80%;
+        top: 50%;
+        rotate: 0deg;
+        /* rotate: 0deg; */
+    } 
+}

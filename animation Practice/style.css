@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+   
+}
+
+
+button
+{
+    border: 2px solid cyan;
+    padding: 10px 15px;
+    color: cyan;
+    background-color: transparent;
+    position: relative;
+    font-weight: 600;
+    transition: all linear 0.5s;
+    
+
+}
+
+ button::after
+{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all linear 0.5s ;
+}
+ button:hover::after
+{
+width: 100%;
+}
+button:hover
+{
+    color: black;
+}

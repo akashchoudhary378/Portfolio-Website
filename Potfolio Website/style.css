@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  background-color: #eeeff1;
+  height: 100%;
+  width: 100%;
+}
+nav {
+  height: 10vh;
+  /* background-color: rgb(255, 0, 242); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  /* gap: 20px; */
+}
+
+.heading h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.left-side a {
+  text-decoration: none;
+  color: black;
+}
+.Github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.Github:hover {
+  background-color: black;
+  color: white;
+}
+
+.Github:hover a {
+  color: white;
+}
+
+.Linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.Linkedin:hover {
+  background-color: black;
+  color: white;
+}
+.Linkedin:hover a {
+  color: white;
+}
+.Email {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: black;
+  /* height: 20px; */
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.Email a {
+  color: white;
+}
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 25px;
+  width: 100%;
+}
+.Introduction {
+  width: 60%;
+  padding: 50px 0px;
+}
+.Introduction h3 {
+  font-size: 45px;
+}
+.Introduction p {
+  line-height: 25px;
+  font-size: 17px;
+  padding: 10px 0px;
+  line-height: 23px;
+}
+.Details-box a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(19, 92, 229);
+}
+/* .Details-box a:hover
+{
+    color: black;
+   
+} */
+
+
+.Details {
+  display: flex;
+  gap: 20px;
+}
+
+.Details-box {
+  border: 2px solid rgb(19, 92, 229);
+  padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  color: rgb(19, 92, 229);
+  cursor: pointer;
+}
+/* ..Details-box a:hover
+{
+
+} */
+.Details-box:hover {
+  border: 2px solid black;
+  color: black;
+}
+.Details-box:hover a {
+  color: black;
+}
+
+.Photo {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.Skills {
+  padding: 40px 80px;
+}
+.Skills h2 {
+  font-size: 35px;
+  text-align: center;
+}
+.Skills p {
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+.main-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px;
+  width: 100%;
+  gap: 30px;
+}
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(178, 179, 180);
+  /* padding:  2px 40px; */
+  border-radius: 5px;
+  padding: 1vh 3vh;
+  /* width: 28vh; */
+  /* width: 100%; */
+}
+.boxes p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.all-images {
+  height: 25px;
+}
+.testimony {
+  padding: 50px 80px;
+}
+.testimony h2 {
+  font-size: 35px;
+}
+.testimony p {
+  line-height: 25px;
+  font-size: 17px;
+}
+.inner-content {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.inner-content p {
+  width: 80%;
+}
+.circle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.circl1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: black;
+}
+.circle-content p {
+  text-align: center;
+}
+.contact {
+  padding: 40px 80px;
+}
+.contact h2 {
+  font-size: 35px;
+}
+
+.contact-data {
+  padding: 30px 0px;
+  display: flex;
+  gap: 20px;
+}
+.contact-content {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  border: 2px solid #4a76ee;
+  background-color: #eeeff1;
+  width: 80vh;
+  outline: none;
+}
+.contact-form form input:active {
+  border: 2px solid #4a76ee;
+}
+/* .contact-form form input:active {
+  border: 2px solid #4a76ee;
+} */
+.contact-form form textarea {
+  margin-bottom: 20px;
+  border: 2px solid #4a76ee;
+  text-decoration: none;
+  outline: none;
+  width: 80vh;
+  background-color: #eeeff1;
+  padding: 10px 10px;
+}
+.contact-form form button {
+  padding: 16px 200px;
+  font-size: 15px;
+  background-color: #4a76ee;
+  border: none;
+  color: white;
+  width: 80vh;
+}
+.contact-form form button:hover {
+  background-color: #2a5eef;
+}
+@media  (max-width: 700px) {
+   nav
+   {
+    flex-wrap: wrap;
+   }
+  nav .heading h4 {
+    font-size: 16px;
+  }
+  .Introduction
+  {
+    width: 100%;
+  }
+  
+  .left-side
+  {
+    gap: 10px;
+  }
+  .left-side a
+{
+  font-size: 13px;
+}
+.Github
+{
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.Linkedin
+{
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.Email
+{
+   padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.main-content {
+    flex-direction: column-reverse;
+  }
+
+  .main-content .Photo
+  {
+    height: 230px;
+    width: 230px;
+  }
+
+  .Introduction h3
+  {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+    .Introduction p
+    {
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+    
+    }
+    .Details
+    {
+      gap: 10px;
+      justify-content: center;
+    }
+    .Details-box
+  {
+    padding: 3px 6px;
+
+  }
+  .Details-box a
+  {
+    font-size: 13px;
+  }
+
+  .Details-box .fa-pen
+  {
+    font-size: 13px;
+  }
+  .Details-box .fa-terminal
+  {
+    font-size: 13px;
+  }
+
+  .Details-box .fa-envelope
+  {
+    font-size: 13px;
+  }
+  .Skills
+{
+  padding: 20px 20px;
+}
+.Skills
+{
+  font-size: 16px;
+}
+
+  .Skills h2
+  {
+    font-size: 30px;
+  }
+  .boxes p
+  {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .main-skills
+  {
+    gap: 5px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .boxes
+  {
+    padding: 0.3vh 0.8vh;
+  }
+  .all-images
+  {
+    height: 19px;
+  }
+
+  .testimony
+  {
+    padding: 50px 20px;
+    width: 100%;
+  }
+  .circl1
+  {
+        height: 160px;
+    width: 160px;
+  }
+  .testimony p 
+  {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .testimony h2 {
+    font-size: 30px;
+    text-align: center;
+}
+  .inner-content 
+  {
+    flex-direction: column;
+  }
+  .inner-content p {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.contact {
+    padding: 50px 20px;
+}
+.contact-data {
+    
+    flex-direction: column;
+}
+.contact h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.contact-content {
+    font-size: 15px;
+    line-height: 25px;
+}
+.contact-form form input {
+    margin-bottom: 20px;
+    padding: 7px 7px;
+    border: 2px solid #4a76ee;
+    background-color: #eeeff1;
+    width: 100%;
+    outline: none;
+}
+.contact-form form textarea {
+  width: 100%;
+}
+.contact-form form button {
+    padding: 10px;
+    font-size: 13px;
+    background-color: #4a76ee;
+    border: none;
+    color: white;
+    width: 100%;
+}
+.contact-form form button {
+        padding: 10px;
+        font-size: 13px;
+}
+}
+/* @media (max-width: 700px) {
+  .main-skills {
+    gap: 10px;
+    width: 100%;
+    /* flex-wrap: nowrap; 
+  }
+  .boxes {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0.5vh 1vh;
+  }
+  .all-images {
+    height: 15px;
+  }
+  .Skills h2 {
+    font-size: 17px;
+  }
+
+  .Skills p {
+    font-size: 8px;
+  }
+} */
+/* @media (max-width: 1000px) {
+  .heading h4 {
+    font-size: 19px;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+  }
+  .main-content .Introduction h3 {
+    text-align: center;
+  }
+  .Details {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Photo {
+    height: 300px;
+    width: 300px;
+  }
+
+  .main-skills {
+    gap: 20px;
+    width: 100%;
+  }
+  .boxes {
+    padding: 0.1vh 0.5vh;
+    width: 100%;
+  }
+  .boxes p {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .Skills h2 {
+    font-size: 23px;
+  }
+
+  .Skills p {
+    font-size: 13px;
+  }
+  .all-images {
+    height: 18px;
+  }
+
+  .inner-content {
+    flex-direction: column;
+  }
+  .contact-data {
+    flex-direction: column;
+  }
+} */
