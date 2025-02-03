@@ -5,13 +5,29 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
 
-body,
-html {
-  background-color: #eeeff1;
+body.dark-theme
+{
+  --primary-color:black  !important;
+  --secondary-color:white !important;
+}
+
+body.dark-theme main-content
+
+
+html,body {
+  background-color: var(--primary-color);
   height: 100%;
   width: 100%;
+  color: var(--secondary-color);
 }
+
+
+
 nav {
   height: 10vh;
   /* background-color: rgb(255, 0, 242); */
@@ -35,7 +51,7 @@ nav {
 }
 .left-side a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 .Github {
   display: flex;
@@ -46,12 +62,12 @@ nav {
   border-radius: 5px;
 }
 .Github:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .Github:hover a {
-  color: white;
+  color: var(--primary-color);
 }
 
 .Linkedin {
@@ -63,11 +79,11 @@ nav {
   border-radius: 5px;
 }
 .Linkedin:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .Linkedin:hover a {
-  color: white;
+  color: var(--primary-color);
 }
 .Email {
   cursor: pointer;
@@ -75,15 +91,38 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: black;
+  background-color: var(--secondary-color);
   /* height: 20px; */
-  color: white;
+  color: var(--primary-color);
   padding: 7px 15px;
   border-radius: 5px;
 }
 .Email a {
-  color: white;
+  color: var(--primary-color);
 }
+
+.moon{
+ 
+  border-radius: 50%;
+   padding: 10px 13px;
+   cursor: pointer;
+ 
+   overflow: hidden;
+
+}
+
+#darkmoon
+{
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+  color: aliceblue;
+}
+/* .moon:hover
+{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+} */
 .main-content {
   display: flex;
   justify-content: space-around;
@@ -137,20 +176,29 @@ nav {
 
 } */
 .Details-box:hover {
-  border: 2px solid black;
-  color: black;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 .Details-box:hover a {
-  color: black;
+  color: var(--secondary-color);
 }
 
 .Photo {
   height: 400px;
   width: 400px;
-  background-color: black;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   flex-shrink: 0;
+  /* overflow: hidden; */
 }
+/* .Photo img
+{ */
+
+  /* object-fit: contain; */
+  /* object-position: top; */
+  /* height: 100%;
+  width: 100%; */
+/* } */
 .Skills {
   padding: 40px 80px;
 }
@@ -220,7 +268,7 @@ nav {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--secondary-color);
 }
 .circle-content p {
   text-align: center;
@@ -250,7 +298,7 @@ nav {
   margin-bottom: 20px;
   padding: 10px 10px;
   border: 2px solid #4a76ee;
-  background-color: #eeeff1;
+  background-color: var(--primary-color);
   width: 80vh;
   outline: none;
 }
@@ -266,7 +314,7 @@ nav {
   text-decoration: none;
   outline: none;
   width: 80vh;
-  background-color: #eeeff1;
+  background-color: var(--primary-color);
   padding: 10px 10px;
 }
 .contact-form form button {
@@ -274,7 +322,7 @@ nav {
   font-size: 15px;
   background-color: #4a76ee;
   border: none;
-  color: white;
+  color: var(--primary-color);
   width: 80vh;
 }
 .contact-form form button:hover {
@@ -454,7 +502,7 @@ nav {
     margin-bottom: 20px;
     padding: 7px 7px;
     border: 2px solid #4a76ee;
-    background-color: #eeeff1;
+    background-color: var(--primary-color);
     width: 100%;
     outline: none;
 }
@@ -466,7 +514,7 @@ nav {
     font-size: 13px;
     background-color: #4a76ee;
     border: none;
-    color: white;
+    color: var(--primary-color);
     width: 100%;
 }
 .contact-form form button {
